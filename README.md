@@ -10,8 +10,12 @@ It used snippet-uiautomator and mobly to build the test.
 -   Python3.11+
 
 ## Installation
+```shell
 pip install snippet-uiautomator
+```
+```shell
 pip install mobly
+```
 
 ## Compatibility
 Mobly requires python 3.11 or newer.
