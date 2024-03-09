@@ -1,35 +1,39 @@
-Description:
+## Description
 This test is to verify login cathay homepage.
 It used snippet-uiautomator and mobly to build the test.
-mobly: https://github.com/google/mobly
-snippet-uiautomator: https://github.com/google/snippet-uiautomator
+-  mobly: https://github.com/google/mobly
+-  snippet-uiautomator: https://github.com/google/snippet-uiautomator
 
-Requirement:
-Android 8.0+ (SDK 26+)
-adb (1.0.40+ recommended)
-Python3.11+
+## Requirements
+-   Android 8.0+ (SDK 26+)
+-   adb (1.0.40+ recommended)
+-   Python3.11+
 
-Installation:
+## Installation
 pip install snippet-uiautomator
 pip install mobly
 
-Compatibility:
+## Compatibility
 Mobly requires python 3.11 or newer.
 Mobly tests could run on the following platforms:
-  -Ubuntu 14.04+
-  -MacOS 10.6+
-  -Windows 7+
+-   Ubuntu 14.04+
+-   MacOS 10.6+
+-   Windows 7+
 
-Command:
+## Command
 Navigate to the root directory.
->> python test.py -c sample_config.yml
+```shell
+python test.py -c sample_config.yml
+```
 Invoking specific test case:
->> python test.py -c sample_config.yml --test_case test_product_intro_subfunction
+```shell
+python test.py -c sample_config.yml --test_case test_product_intro_subfunction
+```
 Multiple Test Beds and Default Test Parameters:
->> python test.py -c sample_config.yml --test_bed SampleTestBed
+```shell
+python test.py -c sample_config.yml --test_bed SampleTestBed
+```
 
-Note:
+## Note
 Due to the webview compatibility of uiautomator, some code is not workable or unstable.
 It is proper to test native app.
-"login_bk_home" 
-"login_bk_home" 
