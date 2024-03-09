@@ -1,0 +1,24 @@
+# DefaultParams: &DefaultParams
+#     root_directory: "c:\\test"
+ 
+TestBeds:
+  # A test bed where adb will find Android devices.
+  - Name: SampleTestBed
+    Controllers:
+        AndroidDevice: '*'
+    TestParams:
+        root_directory: "c:\\test_cathay"
+  # - Name: XyzTestBed
+  #   Controllers:
+  #       AndroidDevice:
+  #         - serial: xyz
+  #           phone_number: 123456
+  #   TestParams:
+  #       <<: *DefaultParams
+  # - Name: AbcTestBed
+  #   Controllers:
+  #       AndroidDevice:
+  #         - serial: abc
+  #           label: golden_device
+  #   TestParams:
+  #       <<: *DefaultParams
