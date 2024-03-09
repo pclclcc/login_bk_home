@@ -90,18 +90,6 @@ class CathayAuto(object):
         WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, supply_card))).click()
         self.takeScreenshot(supply_card_path)
 
-    def test_countDiscontinuedCard(self):
-        cardIntro_xpath = '//a[@data-ga-menu-lv3="-"][text()="卡片介紹"]'
-        try:
-            WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, cardIntro_xpath))).click()
-        except TimeoutException:
-            WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, '//div[@data-ga-menu-lv1][text()="產品介紹"]'))).click()
-            WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, cardIntro_xpath))).click()
-        stopcardList = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//section[@data-anchor-block="blockname06"]/div/div[@class="cubre-o-block__component"]/div/div[@class="swiper-wrapper"]')))
-        stoppedCards = stopcardList.find_elements(By.XPATH, '*')
-        print("(停發)信用卡數量：", len(stoppedCards))
-        self.takeScreenshot()
-
     def test_scrollCardList(self):
         """
         測試信用卡列表滑動功能
