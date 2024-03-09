@@ -89,7 +89,7 @@ class CathayAuto(object):
         supply_card = '//a[text() = "申請信用卡" and @class="cubre-a-menuLink"]'
         WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located((By.XPATH, supply_card))).click()
         self.takeScreenshot(supply_card_path)
-
+    # Step 3.
     def test_scrollCardList(self):
         """
         測試信用卡列表滑動功能
