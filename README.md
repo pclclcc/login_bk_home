@@ -1,4 +1,10 @@
 # Selenium
+
+## Installation
+```shell
+pip install selenium
+```
+
 ## Command
 Navigate to the root directory.
 ```shell
