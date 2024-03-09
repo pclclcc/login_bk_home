@@ -1,3 +1,11 @@
+# Selenium
+## Command
+Navigate to the root directory.
+```shell
+python selenium.py
+```
+
+# Mobly + Snippet UiAutomator
 ## Description
 This test is to verify login cathay homepage.
 It used snippet-uiautomator and mobly to build the test.
