@@ -16,7 +16,7 @@ login_chrome_screenshot_path = root_path / 'cathaybk_login_chrome.png'
 products_intro_path = root_path / 'products_intro.png'
 more_functions_path = root_path / 'more_functions.png'
 card_sub_list_path = root_path / 'card_sub_list.png'
-supply_card_path =root_path / 'supply_card.png'
+supply_card_path = root_path / 'supply_card.png'
 
 class CathayAuto(object):
     def __init__(self):
