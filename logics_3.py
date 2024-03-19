@@ -48,7 +48,7 @@ def max_under_limit(limit):
   while a[i-1] < limit:
     # a[i] = a[i-1] * (a[i-2]+1)
     a.append(a[i-1] * (a[i-2]+1))
-    if a[i] > limit:
+    if a[i] >= limit:
       break
     i += 1
   max = a[i-1]
